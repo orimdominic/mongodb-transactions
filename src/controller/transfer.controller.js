@@ -68,7 +68,7 @@ async function transferFunds(req, res, next) {
 
     await session.commitTransaction();
 
-    return res.json({
+    return res.status(201).json({
       status: "success",
       message: "Transaction completed successfully",
     });
