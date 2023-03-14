@@ -16,5 +16,5 @@ async function getUsers(req, res, next) {
 }
 
 module.exports = {
-  getUsers
-}
+  getUsers,
+};

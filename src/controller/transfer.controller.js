@@ -82,6 +82,24 @@ async function transferFunds(req, res, next) {
   }
 }
 
+async function getTransfers(_req, res, next) {
+  try {
+    const transfers = await TransferModel.find({});
+
+    return res.json({
+      docs: transfers.map((transfer) => ({
+        id: transfer._id,
+        senderId: transfer.senderId,
+        recipientId: transfer.recipientId,
+        amount: transfer.amount,
+      })),
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
 module.exports = {
   transferFunds,
+  getTransfers,
 };

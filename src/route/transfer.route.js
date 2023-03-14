@@ -1,8 +1,12 @@
 const { Router } = require("express");
-const { transferFunds } = require("../controller/transfer.controller");
+const {
+  transferFunds,
+  getTransfers,
+} = require("../controller/transfer.controller");
 
-const router = Router()
+const router = Router();
 
-router.post("/", transferFunds)
+router.post("/", transferFunds);
+router.get("/", getTransfers);
 
-module.exports = router
+module.exports = router;
