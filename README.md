@@ -1,6 +1,6 @@
 # mongodb-transactions
 
-An Express project to demonstrate the use of transactions in MongoDB (when running locally). See the article [How to Handle MongoDB Transactions on your Local Server](https://orimdominic.vercel.com/posts/how-to-handle-mongodb-transactions-on-your-local-server/) for the MongoDB database setup.
+An Express project to demonstrate the use of transactions in MongoDB (when running locally). See the article [How to Handle MongoDB Transactions on your Local Server](https://orimdominic.vercel.app/posts/how-to-handle-mongodb-transactions-on-your-local-server/) for the MongoDB database setup.
 
 ## How to run the project
 
