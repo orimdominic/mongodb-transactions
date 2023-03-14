@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   "@faker-js/faker": ^7.6.0
+  dotenv: ^16.0.3
   express: ^4.18.2
   migrate-mongoose: ^4.0.0
   mongoose: ^7.0.1
 
 dependencies:
   "@faker-js/faker": 7.6.0
+  dotenv: 16.0.3
   express: 4.18.2
   migrate-mongoose: 4.0.0
   mongoose: 7.0.1
@@ -366,6 +368,14 @@ packages:
         integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==,
       }
     engines: { node: ">= 0.8", npm: 1.2.8000 || >= 1.4.16 }
+    dev: false
+
+  /dotenv/16.0.3:
+    resolution:
+      {
+        integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==,
+      }
+    engines: { node: ">=12" }
     dev: false
 
   /dotenv/8.6.0:
