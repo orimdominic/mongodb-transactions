@@ -6,7 +6,11 @@
   "engines": {
     "node": ">=16.0.0"
   },
-  "scripts": {},
+  "scripts": {
+    "create-migration": "./node_modules/.bin/migrate --migrations-dir ./src/migrations --es6 true create",
+    "run-migration": "./node_modules/.bin/migrate --autosync true --es6 true --migrations-dir ./src/migrations up",
+    "start": "run-s run-migration && node index"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,6 +19,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "migrate-mongoose": "^4.0.0",
-    "mongoose": "^7.0.1"
+    "mongoose": "^7.0.1",
+    "npm-run-all": "^4.1.5"
   }
 }
